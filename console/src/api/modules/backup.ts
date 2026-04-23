@@ -41,7 +41,7 @@ export const backupApi = {
     while (true) {
       const { done, value } = await reader.read();
       if (done) break;
-      buffer += decoder.decode(value, { stream: true });
+      buffer += decoder.decode(value, { stream: false });
       const chunks = buffer.split("\n\n");
       buffer = chunks.pop() ?? "";
       for (const chunk of chunks) {

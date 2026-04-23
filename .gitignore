@@ -111,3 +111,6 @@ src/.hypothesis/
 
 # Worktrees
 .worktrees/
+
+# Visual Studio 工作区/项目特定文件
+.vs/

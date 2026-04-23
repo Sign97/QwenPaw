@@ -864,7 +864,7 @@ export default function ChatPage() {
         session_id: window.currentSessionId || session?.session_id || "",
         user_id: window.currentUserId || session?.user_id || DEFAULT_USER_ID,
         channel: window.currentChannel || session?.channel || DEFAULT_CHANNEL,
-        stream: true,
+        stream: false,
         ...biz_params,
       };
 
